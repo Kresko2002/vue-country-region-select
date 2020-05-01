@@ -117,7 +117,7 @@
 </script>
 
 <template>
-  <select @change="onChange($event.target.value)" :class="className">
+  <select style="width: 100px;" @change="onChange($event.target.value)" :class="className">
     <option value="" v-if="!disablePlaceholder && !removePlaceholder">{{ placeholder }}</option>
     <option value="" v-if="disablePlaceholder && !removePlaceholder" disabled selected>{{ placeholder }}</option>
     <option v-if="topCountry" :value="firstCountry" :selected="country === firstCountry">{{topCountryName()}}</option>
